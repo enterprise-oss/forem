@@ -1,6 +1,13 @@
 module Authentication
   module Providers
-    # GitHub authentication provider, uses omniauth-github as backend
+    # Osso authentication provider, uses omniauth-osso as backend.
+    # Osso is an open source service for adding SAML based SSO to
+    # your application. The Osso team added Osso as a provider
+    # in order to serve as a real-world example of how simple it
+    # is to integrate Osso.
+    #
+    # Learn more about Osso at https://ossoapp.com
+
     class Osso < Provider
       OFFICIAL_NAME = "SAML SSO".freeze
       SETTINGS_URL = "https://ossapp.com".freeze # TODO
