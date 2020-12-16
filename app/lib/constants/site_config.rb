@@ -241,6 +241,16 @@ module Constants
         description: "Used as the onboarding task-card image",
         placeholder: IMAGE_PLACEHOLDER
       },
+      osso_key: {
+        description:
+          "The \"Client ID\" for the OAuth client from your Osso instance",
+        placeholder: ""
+      },
+      osso_secret: {
+        description:
+          "The \"Client secret\" for the OAuth client from your Osso instance",
+        placeholder: ""
+      },
       payment_pointer: {
         description: "Used for site-wide web monetization. " \
         "See: https://github.com/thepracticaldev/dev.to/pull/6345",

@@ -113,6 +113,8 @@ module Admin
         github_secret
         facebook_key
         facebook_secret
+        osso_key
+        osso_secret
         auth_providers_to_enable
         invite_only_mode
         allow_email_password_registration

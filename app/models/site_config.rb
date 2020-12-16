@@ -36,6 +36,8 @@ class SiteConfig < RailsSettings::Base
   field :twitter_secret, type: :string, default: ApplicationConfig["TWITTER_SECRET"]
   field :github_key, type: :string, default: ApplicationConfig["GITHUB_KEY"]
   field :github_secret, type: :string, default: ApplicationConfig["GITHUB_SECRET"]
+  field :osso_key, type: :string, default: ApplicationConfig["OSSO_KEY"]
+  field :osso_secret, type: :string, default: ApplicationConfig["OSSO_SECRET"]
   field :facebook_key, type: :string
   field :facebook_secret, type: :string
 

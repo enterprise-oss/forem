@@ -155,9 +155,9 @@ module Authentication
     def extract_created_at_from_payload(logged_in_identity)
       raw_info = logged_in_identity.auth_data_dump.extra.raw_info
 
-      if raw_info.created_at.present?
+      if raw_info&.created_at.present?
         Time.zone.parse(raw_info.created_at)
-      elsif raw_info.auth_time.present?
+      elsif raw_info&.auth_time.present?
         Time.zone.at(raw_info.auth_time)
       else
         Time.current
