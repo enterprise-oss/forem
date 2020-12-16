@@ -10,7 +10,7 @@ module Authentication
 
     class Osso < Provider
       OFFICIAL_NAME = "SAML SSO".freeze
-      SETTINGS_URL = "https://ossapp.com".freeze # TODO
+      SETTINGS_URL = "https://ossoapp.com".freeze # TODO
 
       def new_user_data
         name = info.name || info.email.to_s
