@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_03_063435) do
+ActiveRecord::Schema.define(version: 2020_12_16_025223) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -1305,6 +1305,8 @@ ActiveRecord::Schema.define(version: 2020_12_03_063435) do
     t.string "old_username"
     t.boolean "onboarding_package_requested", default: false
     t.datetime "organization_info_updated_at"
+    t.datetime "osso_created_at"
+    t.string "osso_username"
     t.string "payment_pointer"
     t.boolean "permit_adjacent_sponsors", default: true
     t.string "profile_image"

@@ -63,8 +63,8 @@ gem "oj", "~> 3.10" # JSON parser and object serializer
 gem "omniauth", "~> 1.9" # A generalized Rack framework for multiple-provider authentication
 gem "omniauth-facebook", "~> 8.0" # OmniAuth strategy for Facebook
 gem "omniauth-github", "~> 1.3" # OmniAuth strategy for GitHub
+gem "omniauth-osso", "~> 0.1.7" # OmniAuth strategy for Osso
 gem "omniauth-twitter", "~> 1.4" # OmniAuth strategy for Twitter
-gem "omniauth-osso", "~> 0.1.6" # OmniAuth strategy for Osso
 gem "parallel", "~> 1.20" # Run any kind of code in parallel processes
 gem "patron", "~> 0.13.3" # HTTP client library based on libcurl, used with Elasticsearch to support http keep-alive connections
 gem "pg", "~> 1.2" # Pg is the Ruby interface to the PostgreSQL RDBMS
