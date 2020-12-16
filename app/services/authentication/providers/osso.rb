@@ -50,19 +50,22 @@ module Authentication
         SETTINGS_URL
       end
 
-      def self.authentication_path(state: SecureRandom.hex(32), **_kwargs)
+      # We're overriding these methods to add a little security with a random
+      # string for state
+      def self.authentication_path(state: SecureRandom.hex(32), **kwargs)
         ::Authentication::Paths.authentication_path(
           provider_name,
           state: state,
-          email: "sam@customer.com", # TODO: this means we can pass email in, rather than use hosted login
+          **kwargs,
         )
       end
 
-      # This gets used as the redirect URI, which for osso (and I think OAuth spec?)
-      # can't have query params like state or code
-      def self.sign_in_path(**_kwargs)
+      # TODO: this suggests we can pass email in, rather than use hosted login
+      def self.sign_in_path(state: SecureRandom.hex(32), **_kwargs)
         ::Authentication::Paths.authentication_path(
           provider_name,
+          email: "sam@customer.com",
+          state: state,
         )
       end
 
